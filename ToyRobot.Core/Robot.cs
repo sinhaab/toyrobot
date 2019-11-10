@@ -30,12 +30,6 @@ namespace ToyRobot.Core
                 yUpperBoundary = 5;
             }
 
-            // Custom table size if supplied
-            public Robot(int tableSizeX, int tableSizeY)
-            {
-                xUpperBoundary = tableSizeX;
-                yUpperBoundary = tableSizeY;
-            }
 
             // Validate the X,Y Coordinate Position
             private bool validatePosition()

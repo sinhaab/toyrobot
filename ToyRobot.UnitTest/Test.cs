@@ -224,26 +224,7 @@ namespace ToyRobot.UnitTest
                     //assert
                     Assert.AreEqual(Robot.OUT_OF_BOUNDS_MESSAGE, result);
                 }
-            [TestCase]
-            public void Robot_IgnoreCommand_AfterPlace_UpperBoundX()
-                {
-                    //arrange
-                    Robot robot = new Robot(5, 5);
-                    //act
-                    string result = robot.command("PLACE 6,5,WEST");
-                    //assert
-                    Assert.AreEqual(Robot.OUT_OF_BOUNDS_MESSAGE, result);
-                }
-            [TestCase]
-            public void Robot_IgnoreCommand_AfterPlace_UpperBoundY()
-                {
-                    //arrange
-                    Robot robot = new Robot(5, 5);
-                    //act
-                    string result = robot.command("PLACE 5,6,WEST");
-                    //assert
-                    Assert.AreEqual(Robot.OUT_OF_BOUNDS_MESSAGE, result);
-                }
+          
 
             // ************** Test robot environment boundaries on movement ************************
             [TestCase]
